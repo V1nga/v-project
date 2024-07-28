@@ -462,6 +462,7 @@ button {
     .vote__bottom {
         position: relative;
         padding-top: 26px;
+		overflow-x: clip;
     }
     .vote-img__second {
         position: absolute;
