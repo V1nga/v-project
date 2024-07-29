@@ -57,7 +57,7 @@ button {
     flex-wrap: nowrap;
     height: fit-content;
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
     ._arrow_btn {
         font-size: 3.59vw;
         font-weight: 550;
@@ -226,6 +226,9 @@ button {
 .front-part {
     font-family: "HelveticaNeueCYR", sans-serif;
 }
+.front-part__title {
+    text-transform: uppercase;
+}
 @media (max-width: 799px) {
     .front-part {
         display: flex;
@@ -244,7 +247,6 @@ button {
         font-size: 11.79vw;
         font-weight: 700;
         line-height: 11.28vw;
-        text-transform: uppercase;
         color: #FFF;
     }
     .front-part__text {
@@ -431,7 +433,7 @@ button {
 .vote-img__shadow {
     box-shadow: 0 0 29px 0 #00000014;
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
     .vote {
         margin-top: 28.21vw;
         padding: 0 3.75vw 42.31vw 0 !important;
@@ -571,10 +573,28 @@ button {
     display: flex;
 }
 .all-registration__count {
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     font-weight: 450;
     color: #98EA40;
+}
+.all-registration__slug {
+    position: absolute;
+    top: -64%;
+    right: -23%;
+}
+.all-registration__slug div:nth-child(1) {
+    position: relative;
+    margin-bottom: -13%;
+    background: linear-gradient(180deg, rgba(154, 250, 244, 0) 26.09%, #98EA40 83.49%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.all-registration__slug div:nth-child(2) {
+    background: linear-gradient(180deg, #98EA40 17.82%, rgba(154, 250, 244, 0) 73.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media (max-width: 799px) {
     .join {
@@ -598,6 +618,7 @@ button {
         align-items: center;
     }
     .all-registration__count {
+        margin-left: -15vw;
         margin-top: 5vw;
         font-size: 25.72vw;
         line-height: 25.41vw;
@@ -660,7 +681,7 @@ button {
     }
     .all-registration__count {
         margin-top: 25px;
-        margin-left: 140px;
+        margin-left: 150px;
         font-size: 290px;
         line-height: 286.6px;
     }
