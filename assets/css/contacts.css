@@ -391,14 +391,24 @@ button {
         color: #191919;
     }
     .about__right {
+        position: relative;
         display: flex;
         justify-content: end;
     }
     .about__img {
-        width: 42vw;
+        width: 41vw;
         height: 40vw;
         max-width: 644px;
         max-height: 635px;
+    }
+    .about__logo {
+        position: absolute;
+        top: 2.7vw;
+        right: 1.14vw;
+        width: 3.88vw;
+        height: 3.88vw;
+        max-width: 62px;
+        max-height: 62px;
     }
 }
 @media (min-width: 1600px) {
@@ -417,6 +427,10 @@ button {
         margin-bottom: 12px;
         font-size: 24.44px;
         line-height: 26.67px;
+    }
+    .about__logo {
+        top: 44px;
+        right: 17px;
     }
 }
 
